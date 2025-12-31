@@ -190,9 +190,8 @@ This project was built with a focus on:
 
 The scope was intentionally constrained to reflect how features would be shipped in a real startup environment.
 
-```
-This project was completed as part of the Spur take-home assignment and represents my approach to building practical, production-minded features.
-
-Thank you to the Spur team 🤝 for the opportunity and for your time in reviewing this submission.
-
-Made with 💜
+> This project was built as part of the Spur take-home assignment to demonstrate my approach to building a small but realistic feature that reflects real product work.  
+>  
+> Thank you to the Spur team 🙏 for the opportunity and for taking the time to review my submission.
+> 
+> Made with 💜
