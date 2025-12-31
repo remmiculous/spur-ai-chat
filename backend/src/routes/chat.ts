@@ -2,6 +2,7 @@ import { Router } from "express";
 import prisma from "../db/prisma";
 import { validateMessage } from "../utils/validators";
 import { generateReply, type ChatMessage } from "../services/llm.service";
+import type { Message } from "@prisma/client";
 
 const router = Router();
 
@@ -53,7 +54,7 @@ router.post("/message", async (req, res) => {
     });
 
     // 5. Convert DB messages to LLM-compatible format
-    const history: ChatMessage[] = previousMessages.map((msg) => ({
+    const history: ChatMessage[] = previousMessages.map((msg: Message) => ({
       role: msg.sender === "user" ? "user" : "assistant",
       content: msg.text,
     }));
