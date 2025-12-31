@@ -6,7 +6,8 @@
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
     "build": "tsc",
-    "start": "node dist/index.js"
+    "start": "node dist/index.js",
+    "studio": "prisma studio --url \"file:./dev.db\""
   },
   "keywords": [],
   "author": "",
@@ -18,6 +19,7 @@
     "cors": "^2.8.5",
     "dotenv": "^17.2.3",
     "express": "^5.2.1",
+    "openai": "^6.15.0",
     "prisma": "^7.2.0"
   },
   "devDependencies": {
